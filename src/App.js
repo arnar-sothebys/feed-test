@@ -1,11 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import Feed from "./Feed";
+import Feed2 from "./Feed2";
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div style={{ flexDirection: "row", display: "flex" }}>
+          <Feed />
+          <Feed2 />
+        </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>

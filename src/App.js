@@ -1,5 +1,6 @@
 import Feed from "./Feed";
 import Feed2 from "./Feed2";
+import Feed3 from "./Feed3";
 import "./App.css";
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <div style={{ flexDirection: "row", display: "flex" }}>
           <Feed />
           <Feed2 />
+          <Feed3 />
         </div>
         <p>
           Edit <code>src/App.js</code> and save to reload.

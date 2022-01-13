@@ -1,0 +1,43 @@
+.feedList {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  border: 1px solid pink;
+}
+
+.outerContainer {
+  /* border: 1px solid pink; */
+  overflow: auto;
+  flex: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.innerContainer {
+  display: flex;
+  position: absolute;
+  flex-direction: column-reverse;
+  overflow-y: auto;
+  flex: 1 1 auto;
+  height: 100%;
+  bottom: 0px;
+  transition: transform 150ms ease-in;
+}
+
+@keyframes slidein {
+  0% {
+    transform: translateY(43px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.anim {
+  animation: slidein 100ms ease-in forwards;
+}
+
+/* .innerContainer > :first-child {
+  transform: translateY(25px);
+  animation: slidein 300ms linear forwards;
+} */
